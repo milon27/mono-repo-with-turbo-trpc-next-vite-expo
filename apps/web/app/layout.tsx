@@ -1,3 +1,4 @@
+import "@repo/ui/index.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
