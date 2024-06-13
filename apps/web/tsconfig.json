@@ -5,7 +5,9 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strict": true,
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",

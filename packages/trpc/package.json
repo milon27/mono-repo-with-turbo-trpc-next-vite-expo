@@ -1,10 +1,14 @@
 {
-  "name": "@repo/utils",
+  "name": "@repo/trpc",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*"
   },
-  "main": "src/index.ts"
+  "main": "src/index.ts",
+  "dependencies": {
+    "@trpc/server": "11.0.0-rc.403",
+    "zod": "^3.23.8"
+  }
 }

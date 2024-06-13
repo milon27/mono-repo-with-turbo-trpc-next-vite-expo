@@ -1,6 +1,7 @@
 import "@repo/ui/index.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { TRPCLayout } from "../components/trpc.layout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <TRPCLayout>{children}</TRPCLayout>
+        {/* {children} */}
       </body>
     </html>
   );
