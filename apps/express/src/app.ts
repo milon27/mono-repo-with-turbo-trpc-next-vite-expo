@@ -1,16 +1,14 @@
-// import { config } from "dotenv";
-// import express, { Request, Response } from "express";
+import { config } from "dotenv";
+import express, { Request, Response } from "express";
 
-// config();
+config();
 
-// const app = express();
+const app = express();
 
-// app.get("/", (req: Request, res: Response) => {
-//   res.send("Welcome 🚀");
-// });
+app.get("/", (req: Request, res: Response) => {
+  res.send("Welcome 🚀");
+});
 
-// const port = process.env.PORT;
+const port = process.env.PORT || 4001;
 
-// app.listen(port, () => console.log(`Api running on port ${port}`));
-
-console.log({ dd: "hi" });
+app.listen(port, () => console.log(`Api running on port ${port}`));
