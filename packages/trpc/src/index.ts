@@ -23,3 +23,5 @@ export const appRouter = router({
 
 // export type definition of API
 export type AppRouter = typeof appRouter;
+// https://trpc.io/docs/server/server-side-calls#create-caller
+export const callerFactory = t.createCallerFactory(appRouter);
